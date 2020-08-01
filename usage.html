@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Twitter用 -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@KusaReMKN">
+	<meta name="twitter:creator" content="@KusaReMKN">
+	<meta property="og:title" content="使い方など — MKNBBS">
+	<meta property="og:type" content="article">
+	<meta property="og:description" content="MKNBBS は KusaReMKN によるインターネット掲示板です">
+	<meta property="og:url" content="https://www.kusaremkn.com/mknbbs/usage.html">
+	<meta property="og:image" content="https://www.kusaremkn.com/img/mkn.png">
+	<title>使い方など — MKNBBS</title>
+	<meta name="description" content="MKNBBS は KusaReMKN によるインターネット掲示板です">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/new.css" type="text/css">
+	<!-- <link rel="stylesheet" href="./css/theme/atom-one-dark.css" typ e="text/css"> -->
+	<link rel="stylesheet" href="./css/theme/night.css" typ e="text/css">
+	<link rel="stylesheet" href="./css/mknbbs.css" type="text/css">
+</head>
+
+<body>
+	<header>
+		<h1>使い方など</h1>
+	</header>
+
+	<article>
+		<section>
+			<h2>MKNBBS とはなに？</h2>
+			<p>
+				<b>MKNBBS</b> は KusaReMKN によるインターネット掲示板です。
+				だれでも自由に匿名で書き込むことができます。
+				発信元は一切わかりません。
+			</p>
+
+			<h2>使い方は？</h2>
+			<h3>スレッドに書き込む</h3>
+			<ul>
+				<li>
+					<p>
+						<a href="./">スレ一覧</a>から興味のあるスレッドに入ります。
+					</p>
+				</li>
+				<li>
+					<p>
+						ページの下部に投稿フォームがあります。
+					</p>
+				</li>
+				<li>
+					<p>
+						ハンドルネームは投稿者の名前として書き込みに表示されるものです。
+						省略すると “名無しの暇人🍊” と表示されます。
+					</p>
+				</li>
+				<li>
+					<p>
+						メッセージ欄に投稿内容を入力します。
+						Markdown を利用して投稿内容をスタイリングできます。
+					</p>
+				</li>
+				<li>
+					<p>
+						“書き込む” ボタンを押してスレッドに書き込みます。
+					</p>
+				</li>
+			</ul>
+
+			<h3>スレッドを立てる</h3>
+			<ul>
+				<li>
+					<p>
+						<a href="./">スレ一覧</a>に移動します。
+					</p>
+				</li>
+				<li>
+					<p>
+						ページの下部にスレ立てフォームがあります。
+					</p>
+				</li>
+				<li>
+					<p>
+						基本的にはスレッドに書き込む際と同様です。
+						スレッド名もまた入力してください。
+					</p>
+				</li>
+				<li>
+					<p>
+						“スレッドを立てる” ボタンを押してスレッドを立てます。
+					</p>
+				</li>
+			</ul>
+
+			<h2>Markdown 表記について</h2>
+			<p>
+				MKNBBS ではほとんどの Markdown 記法が使えます。
+				詳細は<a href="https://parsedown.org/test/">このページ</a>を参考にしてください。
+				HTML タグは反映されません。
+			</p>
+			<p>
+				例えば、以下のような Markdown 表記に対応しています。
+			</p>
+
+			<h3>斜体・太字・取り消し線</h3>
+			<h4>入力</h4>
+			<div>
+				<pre style="word-wrap: break-word;"><code>*斜体 italic*
+**太字 bold**
+***太字斜体 bold-italic***
+~~取り消し線 strikethrough~~</code></pre>
+			</div>
+			<h4>表示</h4>
+			<div>
+				<p>
+					<em>斜体 italic</em>
+					<strong>太字 bold</strong>
+					<strong><em>太字斜体 bold-italic</em></strong>
+					<del>取り消し線 strikethrough</del>
+				</p>
+			</div>
+			<h3>リンク・画像</h3>
+			<h4>入力</h4>
+			<pre s tyle="word-wrap: break-word;"><code>[トップ](https://www.kusaremkn.com/)
+
+![バナー画像](https://www.kusaremkn.com/img/banner.png)</code></pre>
+			</div>
+			<h4>表示</h4>
+			<div>
+				<p>
+					<a href="https://www.kusaremkn.com/">トップ</a>
+				</p>
+				<p>
+					<img src="https://www.kusaremkn.com/img/banner.png" alt="バナー画像">
+				</p>
+			</div>
+		</section>
+		<section>
+			<h2>ライセンス</h2>
+			<dl>
+				<dt>Parsedown</dt>
+				<dd><a href="https://github.com/erusev/parsedown/blob/master/LICENSE.txt">MIT License</a></dd>
+				<dd>Copyright (c) 2013-2018 Emanuil Rusev, erusev.com</dd>
+				<dt>new.css</dt>
+				<dd><a href="https://github.com/xz/new.css/blob/master/LICENSE">MIT License</a></dd>
+				<dd>Copyright (c) 2020 Example (https://github.com/3x)</dd>
+				<dt>Highlight.js</dt>
+				<dd><a href="https://github.com/highlightjs/highlight.js/blob/master/LICENSE">BSD 3-Clause License</a></dd>
+				<dd>Copyright (c) 2006, Ivan Sagalaev.</dd>
+			</dl>
+		</section>
+	</article>
+	<footer>
+		<a href="./usage.html">使い方など</a>
+		<span>© 2020 KusaReMKN</span>
+	</footer>
+</body>
+
+</html>
