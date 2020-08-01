@@ -1,0 +1,91 @@
+input[type="text"] {
+	font: inherit;
+	font-size: 90%;
+	display: block;
+	width: 100%;
+}
+
+.input-message {
+	font: inherit;
+	font-family: var(--nc-font-mono);
+	font-size: 90%;
+	display: block;
+	width: 100%;
+	height: 10em;
+	resize: vertical;
+}
+
+footer {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 2em;
+	font-size: small;
+}
+
+.status {
+	text-align: right;
+	font-size: small;
+}
+
+.kakiko-body {
+	border-bottom: groove 2px;
+}
+
+.ThreadListItem {
+	padding-top: .2em;
+	padding-bottom: .2em;
+	font-size: large;
+	border-bottom: dotted 1px;
+}
+
+.handle {
+	color: var(--nc-lk-1);
+	font-size: large;
+}
+
+.markdown-mark {
+	margin: auto;
+	display: inline;
+	vertical-align: middle;
+}
+
+input[type="button"],
+input[type="submit"] {
+	margin: 4px 0;
+}
+
+.align-right {
+	text-align: right;
+}
+
+.moveButtons {
+	position: fixed;
+	bottom: 2em;
+	right: 1em;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.moveButton {
+	background-color: transparent;
+	opacity: 50%;
+	margin: 2px;
+	width: 2em;
+	height: 2em;
+	filter: drop-shadow(3px 3px 2px gray);
+}
+
+.st0 {
+	fill: var(--nc-tx-1);
+}
+
+.replyTo {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 1em;
+	height: 2em;
+	padding: 2px;
+	border: solid 1px var(--nc-lk-1);
+	background: transparent;
+}
