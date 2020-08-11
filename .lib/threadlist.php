@@ -67,6 +67,7 @@ function ThreadList()
 				<div>
 					<label>
 						Message <img class="markdown-mark" height="18" src="./img/markdown-mark.svg" alt="Markdown is supported">
+						<a href="https://memo.kusaremkn.com/mknbbs" target="_blank">Markdown チートシート</a>
 						<textarea class="input-message" name="<?= Message ?>" id="<?= Message ?>" placeholder="Markdown 記法が利用できます！" required></textarea>
 					</label>
 				</div>
