@@ -31,7 +31,6 @@ function ThreadRead(string $ThreadID)
 		<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="./css/new.css" type="text/css">
 		<link rel="stylesheet" href="./css/code.css" typ e="text/css">
-		<!-- <link rel="stylesheet" href="./css/theme/night.css" typ e="text/css"> -->
 		<link rel="stylesheet" href="./css/mknbbs.css" type="text/css">
 		<script src="./js/highlight.pack.js"></script>
 		<script src="./js/textarea.js"></script>

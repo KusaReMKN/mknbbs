@@ -23,15 +23,9 @@ function ThreadList()
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="./css/new.css" type="text/css">
-		<!-- <link rel="stylesheet" href="./css/theme/atom-one-dark.css" typ e="text/css"> -->
-		<!-- <link rel="stylesheet" href="./css/theme/night.css" typ e="text/css"> -->
 		<link rel="stylesheet" href="./css/mknbbs.css" type="text/css">
-		<!-- <script src="./js/highlight.pack.js"></script> -->
 		<script src="./js/textarea.js"></script>
 		<script src="./js/remember.js"></script>
-		<!-- <script>
-			hljs.initHighlightingOnLoad();
-		</script> -->
 	</head>
 
 	<body>
