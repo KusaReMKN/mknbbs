@@ -40,6 +40,9 @@ window.addEventListener('load', () => {
 						hljs.highlightBlock(block);
 					});
 					document.getElementById('KakikoList').appendChild(Kakikos.item(i));
+
+					// 数式表示
+					MathJax.Hub.Queue(["Typeset", MathJax.Hub, `res${i + 1}`]);
 				}
 
 				document.getElementById(`res${lastRes + 1}`).scrollIntoView({
