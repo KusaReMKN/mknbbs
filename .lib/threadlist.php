@@ -26,6 +26,20 @@ function ThreadList()
 		<link rel="stylesheet" href="./css/mknbbs.css" type="text/css">
 		<script src="./js/textarea.js"></script>
 		<script src="./js/remember.js"></script>
+		<!-- 数式 -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_CHTML"></script>
+		<style>
+			/* MathJax 画面溢れはスクロール */
+			.MJXc-display {
+				scrollbar-width: none;
+				overflow-x: scroll;
+				overflow-y: visible;
+			}
+			/* スクロールバー非表示 */
+			.MJXc-display::-webkit-scrollbar {
+				display: none;
+			}
+		</style>
 	</head>
 
 	<body>
