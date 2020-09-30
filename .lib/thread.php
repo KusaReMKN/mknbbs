@@ -128,7 +128,7 @@ function PrintThreadItem(array $object)
 		echo '<div class="kakiko-body" id="res', $i + 1, '">';
 		echo '<div class="handle">', $i + 1, ': ', $kakiko['handle'], '</div>';
 		echo '<div class="markdown-body">', $Parsedown->text($kakiko['message']), '</div>';
-		echo '<div class="status">', '<button class="replyTo" title="返信する">💬</button> ', 'ID: ', $kakiko['author'], ' / ', $kakiko['dateTime'], '</div>';
+		echo '<div class="status">', '<select></select> ','<button class="replyTo" title="返信する">💬</button> ', 'ID: ', $kakiko['author'], ' / ', $kakiko['dateTime'], '</div>';
 		echo '</div>';
 	}
 }

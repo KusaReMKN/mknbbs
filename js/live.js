@@ -1,10 +1,10 @@
 window.addEventListener('load', () => {
-	const WebSocketServer = `wss://${location.hostname}:5001`;
+	const WebSocketServer = `ws://${location.hostname}:5001`;
 	const ThreadID = document.getElementById('ThreadID').textContent;
 	const wss = new WebSocket(WebSocketServer);
 
 	wss.addEventListener('message', e => {
-		console.log(`LIVE: Message for Thread ${ThreadID}`);
+		console.log(`LIVE: Message for Thread ${e.data}`);
 		if (e.data === ThreadID) {
 			let req = new XMLHttpRequest();
 			req.open('GET', window.location.href);
@@ -45,9 +45,18 @@ window.addEventListener('load', () => {
 					MathJax.Hub.Queue(["Typeset", MathJax.Hub, `res${i + 1}`]);
 				}
 
-				document.getElementById(`res${lastRes + 1}`).scrollIntoView({
-					behavior: "smooth"
-				});
+				// 画面スクロールは最新のレスが表示されている時だけになりました
+				let rect = document.getElementById(`res${lastRes}`).getBoundingClientRect();
+
+				if (0 < rect.bottom && rect.top < window.innerHeight) {
+					document.getElementById(`res${lastRes + 1}`).scrollIntoView({
+						behavior: "smooth"
+					});
+				}
+
+				AnchorFrom();
+				ResSmooth();
+
 				console.log('LIVE: Done.');
 			});
 			req.send();
@@ -69,5 +78,50 @@ window.addEventListener('load', () => {
 		return false;
 	});
 
+	AnchorFrom();
+	ResSmooth();
+
 	console.log('MKNBBS Live is enabled!!');
+
+	function AnchorFrom() {
+		const kakikos = document.getElementById('KakikoList').getElementsByClassName('kakiko-body');
+		for (const lister of kakikos) {
+			const select = lister.querySelector('select');
+			select.innerHTML = '<option value="">...</option>';
+			for (const k of kakikos) {
+				const anchors = k.getElementsByTagName('a');
+				for (const a of anchors) {
+					if (RegExp(`#${lister.id}$`).test(a.href)) {
+						const option = document.createElement('option');
+						option.textContent = '<< ' + k.querySelector('.handle').textContent;
+						option.value = k.id;
+						select.appendChild(option);
+					}
+				}
+			}
+			select.oninput = function () {
+				if (this.value !== "") {
+					document.getElementById(this.value).scrollIntoView({
+							behavior: "smooth"
+					});
+					this.value = "";
+				}
+			}
+		}
+	}
+
+	function ResSmooth() {
+		const anchors = document.getElementsByTagName('a');
+		for (const a of anchors) {
+			if (RegExp(`${ThreadID}#res[0-9]+$`).test(a.href)) {
+				a.onclick = function (e) {
+					document.getElementById(a.href.match(/res[0-9]+$/)[0]).scrollIntoView({
+							behavior: "smooth"
+					});
+					e.preventDefault();
+				}
+			}
+		}
+	}
 });
+
