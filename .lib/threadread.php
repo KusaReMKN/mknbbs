@@ -15,15 +15,6 @@ function ThreadRead(string $ThreadID)
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- Twitter用 -->
-		<meta name="twitter:card" content="summary">
-		<meta name="twitter:site" content="@KusaReMKN">
-		<meta name="twitter:creator" content="@KusaReMKN">
-		<meta property="og:title" content="<?= $object['thread']['title'] ?> — MKNBBS">
-		<meta property="og:type" content="article">
-		<meta property="og:description" content="MKNBBS は KusaReMKN によるインターネット掲示板です">
-		<meta property="og:url" content="https://www.kusaremkn.com/mknbbs/<?= $ThreadID ?>">
-		<meta property="og:image" content="https://www.kusaremkn.com/img/mkn.png">
 		<title><?= $object['thread']['title'] ?> — MKNBBS</title>
 		<meta name="description" content="MKNBBS は KusaReMKN によるインターネット掲示板です">
 		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
