@@ -50,7 +50,7 @@ function ThreadRead(string $ThreadID)
 
 	<body>
 		<header>
-			<h1><?= $object['thread']['title'] ?></h1>
+			<h1><a href="./index.php"><?= $object['thread']['title'] ?></a></h1>
 			<div class="status">ID: <span id="ThreadID"><?= $ThreadID ?></span></div>
 		</header>
 
