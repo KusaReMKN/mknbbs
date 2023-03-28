@@ -59,7 +59,7 @@ function ThreadRead(string $ThreadID)
 				<?php PrintThreadItem($object); ?>
 			</section>
 			<section>
-				<form action="./<?= $ThreadID ?>" method="POST" id="form" onsubmit="return false;">
+				<form action="./index.php?q=<?= $ThreadID ?>" method="POST" id="form" onsubmit="//return false;">
 					<fieldset>
 						<legend>書き込み</legend>
 						<div>

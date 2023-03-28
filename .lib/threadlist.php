@@ -40,7 +40,7 @@ function ThreadList()
 		<nav>
 			<?php PrintThreadList(); ?>
 		</nav>
-		<form action="./" method="POST" id="form">
+		<form action="./index.php" method="POST" id="form">
 			<fieldset>
 				<legend>新しいスレッドを立てる</legend>
 				<div>

@@ -114,7 +114,7 @@ function PrintThreadList()
 
 	foreach ($FileList as $ThreadFile) {
 		$object = GetJSONFile($ThreadFile['name']);
-		echo '<div class="ThreadListItem">', '<a href="', $object['thread']['id'], '">', $object['thread']['title'], ' (', count($object['kakiko']), 'レス)', '</a>', '</div>';
+		echo '<div class="ThreadListItem">', '<a href="./index.php?q=', $object['thread']['id'], '">', $object['thread']['title'], ' (', count($object['kakiko']), 'レス)', '</a>', '</div>';
 	}
 	echo '</div>';
 }

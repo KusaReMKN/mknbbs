@@ -64,6 +64,7 @@ window.addEventListener('load', () => {
 		}
 	});
 
+/*
 	document.forms.namedItem('form').addEventListener('submit', () => {
 		console.log('LIVE: Submitting ...');
 		let req = new XMLHttpRequest();
@@ -77,6 +78,7 @@ window.addEventListener('load', () => {
 		wss.send(ThreadID);
 		return false;
 	});
+*/
 
 	AnchorFrom();
 	ResSmooth();
@@ -124,4 +126,3 @@ window.addEventListener('load', () => {
 		}
 	}
 });
-
